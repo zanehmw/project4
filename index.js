@@ -30,8 +30,9 @@ app.get("/api/users", function(req, res){
   });
 });
 
-app.get("/api/users/:_id", function(req, res){
-  Users.findOne(req.params).then(function(user){
+app.get("/api/users/:user", function(req, res){
+  console.log(req.params.user);
+  Users.findOne({name: req.params.user}).then(function(user){
     res.json(user);
   });
 });

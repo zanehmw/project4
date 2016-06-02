@@ -46,7 +46,7 @@
 
   UserFactory.$inject = ["$resource"];
   function UserFactory($resource){
-    var User = $resource("/api/users/:text");
+    var User = $resource("/api/users/:user");
     return User;
   }
 
@@ -60,7 +60,7 @@
   UserIndexCtrl.$inject = ["User"];
   function UserIndexCtrl(User){
     var vm = this;
-    vm.user = User.query();
+    vm.users = User.query();
     vm.create = function(){
       User.save(vm.newUser, function(response){
         vm.users.push(response);
@@ -71,7 +71,7 @@
   UserShowCtrl.$inject = ["User", "$stateParams", "$state"];
   function UserShowCtrl(User, $stateParams, $state){
     var vm = this;
-    vm.users = User.get($stateParams);
+    vm.user = User.get($stateParams);
     vm.update = function(){
       User.update($stateParams, vm.user, function(response){
         $state.reload();

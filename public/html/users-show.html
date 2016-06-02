@@ -1,3 +1,6 @@
 <h2>{{UserShowVM.user.name}}</h2>
-<h3>{{user.name}}</h3>
-<h4>{{user.meds}}</h4>
+<ul>
+  <li data-ng-repeat="med in UserShowVM.user.meds">
+    {{med.text}}
+  </li>
+</ul>

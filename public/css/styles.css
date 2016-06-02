@@ -1,0 +1,53 @@
+html {
+ margin-left:10vw;
+ margin-right:10vw;
+}
+
+body {
+  background-color: solid white;
+}
+
+body, h1, h2, h3, p,{
+  color: black
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+  h1, h2, h3, li  {
+    font-size: 20px;
+  }
+  h3 {
+    color: purple;
+  }
+
+
+li {
+  text-decoration: none;
+  display: inline;
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  height: 120px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px;
+  font-size: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+
+a:hover, a:visited {
+  text-decoration: none;
+  background-color: #ff8080;
+}
