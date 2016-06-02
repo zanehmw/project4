@@ -4,7 +4,7 @@
   </li>
 </ul>
 
-<div>
-  <input type="text" data-ng-model="UserIndexVM.newUser.text" />
-  <button data-ng-click="UserIndexVM.create()">Add User</button>
-</div>
+<form ng-submit="UserIndexVM.create()">
+  <input type="text" data-ng-model="UserIndexVM.newUser.name" />
+  <button type="submit" >Add User</button>
+</form>

@@ -1,6 +1,19 @@
 <h2>{{UserShowVM.user.name}}</h2>
+
+<div>
+  <input type="text" data-ng-model="UserShowVM.user.name" />
+  <button data-ng-click="UserShowVM.update()">Edit Patient Name</button>
+  <button data-ng-click="UserShowVM.destroy()">Delete Patient</button>
+</div>
+
+
 <ul>
   <li data-ng-repeat="med in UserShowVM.user.meds">
-    {{med.text}}
+    <p>{{med.text}}</p>
   </li>
 </ul>
+
+<div>
+  <input type="text" data-ng-model="UserShowVM.user.med">
+  <button data-ng-click="UserShowVM.createMeds()">Add Medication</button>
+</div>

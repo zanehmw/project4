@@ -38,7 +38,7 @@ app.get("/api/users/:user", function(req, res){
 });
 
 app.post("/api/users", function(req, res){
-  User.create(req.body).then(function(user){
+  Users.create(req.body).then(function(user){
     res.json(user)
   })
 });

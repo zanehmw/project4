@@ -17,6 +17,11 @@
   function Router($stateProvider, $locationProvider, $urlRouterProvider){
     $locationProvider.html5Mode(true);
     $stateProvider
+    .state("home", {
+      url: "/",
+      templateUrl: "/assets/html/homepage.html"
+
+    })
     .state("medindex", {
       url: "/medicine",
       templateUrl: "/assets/html/meds-index.html",
@@ -46,7 +51,9 @@
 
   UserFactory.$inject = ["$resource"];
   function UserFactory($resource){
-    var User = $resource("/api/users/:user");
+    var User = $resource("/api/users/:user", {}, {
+      update: {method: "PUT"}
+    });
     return User;
   }
 
@@ -63,6 +70,7 @@
     vm.users = User.query();
     vm.create = function(){
       User.save(vm.newUser, function(response){
+        console.log(response)
         vm.users.push(response);
       });
     }
@@ -75,6 +83,17 @@
     vm.update = function(){
       User.update($stateParams, vm.user, function(response){
         $state.reload();
+      });
+    }
+
+    vm.createMeds = function(){
+      vm.user.meds.push(vm.med);
+      vm.update();
+    }
+
+    vm.destroy = function(){
+      User.remove($stateParams, function(){
+        $state.go("userindex");
       });
     }
   }
