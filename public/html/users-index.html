@@ -1,0 +1,10 @@
+<ul>
+  <li data-ng-repeat="user in UserIndexVM.users">
+    <h2><a data-ui-sref="show(user)">{{user.name}}</a></h2>
+  </li>
+</ul>
+
+<div>
+  <input type="text" data-ng-model="UserIndexVM.newUser.text" />
+  <button data-ng-click="UserIndexVM.create()">Add User</button>
+</div>

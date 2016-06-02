@@ -1,0 +1,11 @@
+<h1>This is the med index</h1>
+<ul>
+  <li data-ng-repeat="medname in MedIndexVM.mednames">
+    <h2>{{medname.text}}</h2>
+    <ul>
+      <li data-ng-repeat="note in medname.notes">
+        {{med.note}}
+      </li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Ibuprofen",
+    "note": [{"text": "for headaches"}, {"text": "no more than 3200mg per day"}]
+  },
+  {
+    "text": "Amoxicillin",
+    "note": [{"text": "for infections"}, {"text": "3 tablets times a day"}]
+  },
+  {
+    "text": "Penicillin",
+    "note": [{"text": "antibiotic"}]
+  }
+]
