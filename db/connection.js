@@ -18,7 +18,11 @@ var Meds = mongoose.Schema({
 
 var Users = mongoose.Schema({
   name: String,
-  meds: Array
+  meds: Array,
+  sex: String,
+  age: String,
+  ailments: Array,
+  notes: Array
 })
 
 mongoose.model("Note", Note);

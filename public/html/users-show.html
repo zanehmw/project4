@@ -1,17 +1,24 @@
-<h2>{{UserShowVM.user.name}}</h2>
+<h2>Patient: {{UserShowVM.user.name}}</h2>
+<img ng-src="http://vignette2.wikia.nocookie.net/mafiagame/images/2/23/Unknown_Person.png/revision/latest?cb=20151119092211">
+<h3>Sex: {{UserShowVM.user.sex}}</h3>
+<div data-ng-repeat="ailment in UserShowVM.user.ailments">
+  <h3>Ailments: {{ailment.text}}</h3>
+</div>
+<div data-ng-repeat="note in UserShowVM.user.notes">
+  <h3>Notes: {{note.text}}</h3>
+</div>
+<h3>Medications: {{UserShowVM.user.sex}}</h3>
+<ul>
+  <li data-ng-repeat="med in UserShowVM.user.meds">
+    <p>{{med.text}}</p>
+  </li>
+</ul>
 
 <div>
   <input type="text" data-ng-model="UserShowVM.user.name" />
   <button data-ng-click="UserShowVM.update()">Edit Patient Name</button>
   <button data-ng-click="UserShowVM.destroy()">Delete Patient</button>
 </div>
-
-
-<ul>
-  <li data-ng-repeat="med in UserShowVM.user.meds">
-    <p>{{med.text}}</p>
-  </li>
-</ul>
 
 <div>
   <input type="text" data-ng-model="UserShowVM.user.med">

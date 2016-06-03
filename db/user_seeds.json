@@ -1,58 +1,113 @@
 [
   {
     "name": "Zaneh Williams",
-    "meds": [{"text": "Women's One-A-Day Gummy Vitamin"}]
+    "meds": [{"text": "Women's One-A-Day Gummy Vitamin"}],
+    "sex": "Female",
+    "age": "23",
+    "ailments": [{"text": "None"}],
+    "notes": [{"text": "Has yet to schedule next checkup"}]
   },
   {
-    "name": "Jane Doe",
-    "meds": [{"text": "Penicillin"}, {"text": "Ibuprofen"}, {"text": "Mens One-A-Day Vitamin"}]
+    "name": "John Doe",
+    "meds": [{"text": "Penicillin"}, {"text": "Ibuprofen"}, {"text": "Mens One-A-Day Vitamin"}],
+    "sex": "Male",
+    "age": "46",
+    "ailments": [{"text": "Arthritis"}],
+    "notes": [{"text": "Lactose intolerant"}]
   },
   {
     "name": "Lolo Kenz",
-    "meds": [{"text": "Codeine"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Codeine"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}],
+    "sex": "Female",
+    "age": "28",
+    "ailments": [{"text": "Too stretchy from yoga"}],
+    "notes": [{"text": "Vegan, loves yoga"}]
   },
   {
     "name": "Rihanna Fenty",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Nexium"}, {"text": "Seroquel"}, {"text": "Abilify"}, {"text": "Crestor"}],
+    "sex": "Female",
+    "age": "28",
+    "ailments": [{"text": "Joint pain from wearing high heels"}],
+    "notes": [{"text": "Great music"}]
   },
   {
     "name": "John Smith",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Plavix"}, {"text": "Nexium"}],
+    "sex": "Male",
+    "age": "64",
+    "ailments": [{"text": "Diabetes"}],
+    "notes": [{"text": "May have changed phone number"}]
   },
   {
     "name": "Jason Strawcutter",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Actos"}, {"text": "Crestor"}, {"text": "Ibuprofen"}],
+    "sex": "Male",
+    "age": "37",
+    "ailments": [{"text": "High Blood Pressure"}],
+    "notes": [{"text": "Plans to be more active in the future"}]
   },
   {
     "name": "Steve Kerl",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Percocet"}, {"text": "Oxycodone"}],
+    "sex": "Male",
+    "age": "78",
+    "ailments": [{"text": "Fibromyalgia"}],
+    "notes": [{"text": "Exercises 5 days a week, water aerobics"}]
   },
   {
     "name": "Kiley Davis",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Codeine"}, {"text": "Xantax"}],
+    "sex": "Female",
+    "age": "86",
+    "ailments": [{"text": "Alzheimer's Disease"}],
+    "notes": ["Next appointment on July 29th"]
   },
   {
     "name": "Arikai Tabeson",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Abilify"}, {"text": "Crestor"}],
+    "sex": "Female",
+    "age": "24",
+    "ailments": [{"text": "None"}],
+    "notes": [{"text": "Very active"}]
   },
   {
     "name": "Francesca Simmons",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}],
+    "sex": "Female",
+    "ailments": [{"text": "None"}],
+    "notes": [{"text": "Seems to be stressed, will recommend therapist"}]
   },
   {
     "name": "Max Greenberg",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}],
+    "sex": "Female",
+    "age": "23",
+    "ailments": [{"text": "None"}],
+    "notes": [{"text": "None"}]
   },
   {
     "name": "James Blowhorn",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Penicillin"}, {"text": "Ibuprofen"}],
+    "sex": "Male",
+    "age": "23",
+    "ailments": [{"text": "None"}],
+    "notes": [{"text": "Brings blowhorn to every appoinment"}]
   },
   {
     "name": "Mike Suits",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Plavix"}, {"text": "Nexium"}],
+    "sex": "Male",
+    "age": "23",
+    "ailments": [{"text": "None"}],
+    "notes": [{"text": "Cares about his health as much as he cares about his suits"}]
   },
   {
     "name": "Josh Panda",
-    "meds": [{"text": "Codeine/Lean"}, {"text": "Xantax"}, {"text": "Percocet"}, {"text": "Oxycodone"}]
+    "meds": [{"text": "Plavix"}, {"text": "Nexium"}],
+    "sex": "Male",
+    "age": "23",
+    "ailments": [{"text": "None"}],
+    "notes": [{"text": "Says he is living the 'Panda Lifestyle'"}]
   }
 ]

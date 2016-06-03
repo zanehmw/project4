@@ -90,6 +90,7 @@
     }
 
     vm.createMeds = function(){
+      console.log(vm.user.meds);
       vm.user.meds.push(vm.med);
       vm.update();
     }
