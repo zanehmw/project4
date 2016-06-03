@@ -31,16 +31,27 @@ app.get("/api/users", function(req, res){
 });
 
 app.get("/api/users/:user", function(req, res){
-  console.log(req.params.user);
   Users.findOne({name: req.params.user}).then(function(user){
     res.json(user);
   });
+});
+
+app.put("/api/users/:user", function(req, res){
+  Users.findOneAndUpdate({name: req.params.user}, req.body, {new: true}, function(err, doc){
+    res.json(doc);
+  })
 });
 
 app.post("/api/users", function(req, res){
   Users.create(req.body).then(function(user){
     res.json(user)
   })
+});
+
+app.delete("/api/users/:user", function(req, res){
+  Users.findOneAndRemove({name: req.params.user}, req.body).then(function(){
+    res.json({success: true});
+  });
 });
 
 app.get("/*", function(req, res){

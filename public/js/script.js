@@ -62,6 +62,7 @@
   function MedIndexCtrl(Medicine){
     var vm = this;
     vm.mednames = Medicine.query();
+    console.log(this.mednames.photo_url)
   }
 
   UserIndexCtrl.$inject = ["User"];
@@ -81,8 +82,10 @@
     var vm = this;
     vm.user = User.get($stateParams);
     vm.update = function(){
+      console.log(vm.user);
       User.update($stateParams, vm.user, function(response){
-        $state.reload();
+        console.log(response);
+        $state.go('userindex');
       });
     }
 
@@ -92,7 +95,7 @@
     }
 
     vm.destroy = function(){
-      User.remove($stateParams, function(){
+      User.remove($stateParams, vm.user, function(response){
         $state.go("userindex");
       });
     }

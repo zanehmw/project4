@@ -8,7 +8,8 @@ var Note = mongoose.Schema({
 
 var Medname = mongoose.Schema({
   text: String,
-  note: [Note]
+  note: [Note],
+  photo_url: String
 })
 
 var Meds = mongoose.Schema({
