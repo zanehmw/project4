@@ -67,3 +67,11 @@ a:hover{
   margin-top: 60px;
   height: 400px;
 }
+
+.med_display{
+  display: inline-block;
+  text-align: center;
+  margin: auto 0;
+  height: 300px;
+  width: 200px;
+}

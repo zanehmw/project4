@@ -1,6 +1,8 @@
 <ul>
   <li data-ng-repeat="medname in MedIndexVM.mednames">
-    <p>{{medname.text}}</p>
-    <img ng-src="{{medname.photo_url}}">
+    <div class="med_display">
+      <p>{{medname.text}}</p>
+      <p><img ng-src="{{medname.photo_url}}"></p>
+    </div>
   </li>
 </ul>
